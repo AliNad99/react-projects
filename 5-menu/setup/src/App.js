@@ -22,7 +22,7 @@ function App() {
     console.log(newItems);
   }
 
-
+const categories = ["all", ...new Set(itesm.map ( item => item.category))]
   
   return (
     <main>

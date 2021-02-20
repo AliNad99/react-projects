@@ -231,6 +231,7 @@ Jobs
   }
   .job-btn {
     margin-bottom: 1rem;
+    outline: none;
   }
   .active-btn {
     box-shadow: -2px 0 var(--clr-primary-5);
