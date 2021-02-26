@@ -12,7 +12,7 @@ const SingleColor = ({rgb, weight, index, colorsLength}) => {
   const copyHex = () => {
     setAlert(true); 
     navigator.clipboard.writeText(hex)
-    const timeout = setTimeout(function () {console.log("hallo"); setAlert(false)}, 2000)
+    const timeout = setTimeout(function () {setAlert(false)}, 2000)
   }
 
   return (
