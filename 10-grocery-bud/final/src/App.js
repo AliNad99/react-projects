@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import List from './List';
 import Alert from './Alert';
+
 const getLocalStorage = () => {
   let list = localStorage.getItem('list');
   if (list) {
@@ -15,6 +16,7 @@ function App() {
   const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState(null);
   const [alert, setAlert] = useState({ show: false, msg: '', type: '' });
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!name) {

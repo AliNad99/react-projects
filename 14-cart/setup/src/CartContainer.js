@@ -1,7 +1,7 @@
 import React from 'react'
 import CartItem from './CartItem'
 import { useGlobalContext } from './context'
-import {ACTIONS} from "./reducer"
+
 
 const CartContainer = () => {
   const { cart, total, clearCart } = useGlobalContext()
